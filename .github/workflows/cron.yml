@@ -2,7 +2,8 @@ name: Cron
 
 on:
   push: 
-    - test_xfail
+    branches:
+      - test_xfail
 jobs:
   main:
     name: ${{ matrix.os }} / ${{ matrix.python-version }} / ${{ matrix.pip-version }}
