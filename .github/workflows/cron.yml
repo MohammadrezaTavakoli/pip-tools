@@ -12,13 +12,13 @@ jobs:
       fail-fast: false
       matrix:
         os:
-          - Ubuntu
+                #- Ubuntu
           - Windows
-          - MacOS
+            #- MacOS
         python-version:
           - 3.9
-          - 3.6
-          - 3.7
+            #- 3.6
+            #- 3.7
           - 3.8
         pip-version:
           - main
@@ -70,8 +70,8 @@ jobs:
       fail-fast: false
       matrix:
         os:
-          - Ubuntu
-          - MacOS
+                #- Ubuntu
+                #- MacOS
           # TODO: fix test_realistic_complex_sub_dependencies test on Windows
           - Windows
         python-version:
