@@ -344,7 +344,7 @@ def test_emit_index_url_option(runner, option, expected_output):
     assert out.stderr.strip().splitlines() == expected_output
 
 
-@pytest.mark.network
+@pytest.mark.xfail(strict=True)
 def test_realistic_complex_sub_dependencies(runner):
     wheels_dir = "wheels"
 
